@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Home-Page</title>
+	<link type="text/css" href="css/main.css" rel="stylesheet" />
+	<link type="text/css" href="css/autoplay.css" rel="stylesheet" />
+	<script type="text/javascript" src="js/autoplay.js"></script>
+</head>
+<body class="main">
+
+	<div id="divhead">
+		<table cellspacing="0" class="headtable">
+			<tr>
+				<td>
+					<a href="#">
+						<img src="images/logo.png" width="200" height="60"border="0" />
+					</a>
+				</td>
+				<td>
+					<img src="images/cart.jpg" width="26" height="23"
+					style="margin-bottom:-4px" /> &nbsp; <a href="#">Shopping Cart</a>
+					| <a href="#">Help</a>
+					| <a href="#">Account</a>
+					| <a href="register.html">Register</a>
+				</td>
+			</tr>
+		</table>
+	</div>
+	
+	<div id="divmenu">
+		<a href="#">Liteature</a>
+		<a href="#">Life</a>
+		<a href="#">Computer</a>
+		<a href="#">Math</a>
+		<a href="#">Language</a>
+		<a href="#">Management</a>
+		<a href="#">Art</a>
+		<a href="#">Science</a>
+		<a href="#">Exam</a>
+		<a href="#">Social</a>
+		<a href="#" style="color:#FFFF00">Main Menu</a>
+	</div>
+	
+	<div id="divsearch">
+		<form action="#" id="searchform">
+			<table width="100%" cellspacing="0">
+				<tr>
+					<td style="text-align: right; padding-right:220px">
+						Search
+						<input type="text" name="textfield" class="inputtable"
+							id="textfield" value="Enter the book's name"
+							onmouseover="this.focus();"
+							onclick="my_click(this, 'textfield');"
+							onBlur="my_blur(this, 'textfield');" />
+							<a href="#">
+								<img src="images/searchbutton.jpg"
+								width="60" height="60"
+								border="0" style="margin-bottom:-4px"
+								onclick="search()" />
+							</a>
+						</td>
+					</tr>
+			</table>
+		</form>
+	</div>
+	
+	<div id="box_autoplay">
+		<div class="list">
+			<ul>
+				<li><img src="images/docker.jpg" width="450" height="150" /></li>
+				<li><img src="images/python.jpg" width="450" height="150" /></li>
+				<li><img src="images/springboot.jpg" width="450" height="150" /></li>
+				<li><img src="images/vue.jpg" width="450" height="150" /></li>
+			</ul>
+		</div>
+	</div>
+	<div id="divcontent">
+		<table width="900px" cellspacing="0">
+			<tr>
+				<td width="1000">
+				<img src="images/billboard.jpg" width="1000" height="380" />
+					<table cellspacing="0" class="ctl">
+						<tr>
+							<td width="485" height="29">
+								Dear users, <br />
+								Welcome to Jason's bookstore! <br />
+								2018.3.27 <br />
+								Administrator <br />
+							</td>
+						</tr>
+					</table>
+				</td>
+				<td style="padding:5px 15px 10px 40px">
+					<table width="100%" cellspacing="0">
+						<tr>
+							<td>
+								<img src="images/hottitle.jpg" width="126" height="29" />
+							</td>
+						</tr>
+					</table>
+					<table width="100%" cellspacing="0">
+						<tr>
+							<td style="width:80; text-align:center">
+							<a href="#">
+								<img src="bookcover/001.jpg" width="102" height="130" />
+							</a><br />
+							</td>
+							<td style="width:80; text-align:center">
+							<a href="#">
+								<img src="bookcover/002.jpg" width="102" height="130" />
+							</a><br />
+							</td>
+							<td style="width:80; text-align:center">
+							<a href="#">
+								<img src="bookcover/003.jpg" width="102" height="130" />
+							</a><br />
+							</td>
+							<td style="width:80; text-align:center">
+							<a href="#">
+								<img src="bookcover/004.jpg" width="102" height="130" />
+							</a><br />
+							</td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+		</table>
+	</div>
+	
+	<div id="divfoot">
+		<table width="100%" cellspacing="0" >
+			<tr>
+				<td rowspan="2" style="width:10%">
+					<img src="images/logo.png" width="195" height="50"
+					style="margin-left:175px" />
+				</td>
+				<td style="padding-top:5px; padding-left:50px">
+					<a href="#">
+						<font color="#747556"><b>CONTACT US</b></font>
+					</a>
+				</td>
+			</tr>
+			<tr>
+				<td style="padding-left:50px">
+					<font color="#CCCCCC">
+						<b>COPYRIGHT 2018 &copy; BookStore All Rights Reserved.</b>
+					</font>
+				</td>
+			</tr>
+		</table>	
+	</div>
+</body>
+</html>
