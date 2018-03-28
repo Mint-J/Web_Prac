@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+	<link rel="stylesheet" href="css/main.css" type="text/css" />
+	<script type="text/javascript" src="js/form.js"></script>
+</head>
+<body>
+	
+	<div id="divhead">
+		<table cellspacing="0" class="headtable">
+			<tr>
+				<td>
+					<a href="#">
+						<img src="images/logo.png" width="200" height="60" border="0" />
+					</a>
+				</td>
+				<td style="text-align: right">
+					<img src="images/cart.jpg" width="26" height="23"
+					style="margin-bottom:-4px" /> &nbsp; <a href="#">Shopping Cart</a>
+					| <a href="#">Help</a>
+					| <a href="#">Account</a>
+					| <a href="register.html">Register</a>
+				</td>
+			</tr>
+		</table>
+	</div>
+	
+	<div id="divmenu">
+		<a href="#">Literature</a>&nbsp;&nbsp;
+		<a href="#">Life</a>&nbsp;&nbsp;
+		<a href="#">Computer</a>&nbsp;&nbsp;
+		<a href="#">Math</a>&nbsp;&nbsp;
+		<a href="#">Language</a>&nbsp;&nbsp;
+		<a href="#">Management</a>&nbsp;&nbsp;
+		<a href="#">Art</a>&nbsp;&nbsp;
+		<a href="#">Science</a>&nbsp;&nbsp;
+		<a href="#">Exam</a>&nbsp;&nbsp;
+		<a href="#">Social</a>&nbsp;&nbsp;
+		<a href="#" style="color:#FFFF00">Main Menu</a>
+	</div>
+	
+	<div id="divcontent" align="center">
+		<form action="registersuccess.html" method="post" onsubmit="return checkForm();">
+			<table width="850px" cellspacing="0">
+				<tr>
+					<td style="padding: 10px"><h1>Register a new user</h1>
+					<table width="100%" cellspacing="2" class="upline">
+						<tr>
+							<td style="text-align: right; width: 20%">User E-mail</td>
+							<td style="width: 40%">
+								<input type="text" class="textinput"
+								id="email" name="email" onkeyup="checkEmail();" />
+							</td>
+							<td colspan="2"><span id="emailMsg"></span>							
+								<font color="#999999">Enter valid email address</font>
+							
+							</td>
+						</tr>
+						<tr>
+							<td style="text-align: right">User name: </td>
+							<td>
+								<input type="text" class="textinput"
+								id="username" name="username" onkeyup="checkUsername();" />
+							</td>
+							<td colspan="2"><span id="usernameMsg"></span>
+								<font color="#999999">
+									1-10 digits required.(a-z|A-Z|0-9|_)<br />
+									(Numbers can't be in the first digit!)
+								</font>
+							</td>
+						</tr>
+						<tr>
+							<td style="text-align: right">Password: </td>
+							<td>
+								<input type="password" class="textinput" id="password"
+								name="password" onkeyup="checkPassword();" />
+							</td>
+							<td><span id="passwordMsg"></span>
+								<font color="#999999">6-16 digits are required</font>
+							</td>
+						</tr>
+						<tr>
+							<td style="text-align: right">Reenter password: </td>
+							<td>
+								<input type="password" class="textinput" id="repassword"
+								name="password" onkeyup="checkConfirm();" />
+							</td>
+							<td><span id="confirmMsg"></span>&nbsp;</td>
+						</tr>
+						<tr>
+							<td style="text-align: right">Gender: </td>
+							<td colspan="2">&nbsp;&nbsp;
+								<input type="radio" name="gender" value="male" checked="checked" />Male
+								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+								<input type="radio" name="gender" value="female" />Female
+							</td>
+							<td>&nbsp;</td>
+						</tr>
+						<tr>
+							<td style="text-align: right">Telephone: </td>
+							<td colspan="2">
+								<input type="text" class="textinput" style="width: 350px" name="telephone" />
+							</td>
+							<td>&nbsp;</td>
+						</tr>
+						<tr>
+							<td style="text-align: right">Personal Statement: </td>
+							<td colspan="2">
+								<textarea class="textarea" name="introduce" cols="50"></textarea>
+							</td>
+							<td>&nbsp;</td>
+						</tr>
+					</table>
+					<table width="70%" cellspacing="0">
+						<tr>
+							<td style="padding-top: 20px; text-align: center">
+								<input type="image" src="images/submit.gif" width="100px"
+								height="40px" name="submit" />
+							</td>
+						</tr>
+					</table>	
+					</td>
+				</tr>
+			</table>
+		</form>
+	</div>
+</body>
+</html>
