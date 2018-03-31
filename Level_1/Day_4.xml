@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE bookshelf SYSTEM "Day_4.dtd">
+<bookshelf>
+	<book>
+		<bookname>Java SE</bookname>
+		<author>Jason</author>
+		<price>99.0</price>
+	</book>
+</bookshelf>
+
+<!DOCTYPE school [
+	<!ELEMENT school (student+)>
+	<!ELEMENT student (name, grade)>
+	<!ELEMENT name (#PCDATA)>
+	<!ELEMENT grade (#PCDATA)>
+]>
+<school>
+	<student>
+		<name>Jason</name>
+		<grade>twelve</grade>
+	</student>
+</school>
