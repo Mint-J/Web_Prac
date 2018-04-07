@@ -7,26 +7,25 @@
 </head>
 <body>
 	<h1>Snapshots</h1>
-	<ul>
-		<li><a href="images/docker.jpg" title="docker"
-			onclick="showPic(this); return false;">docker</a></li>
-		<li><a href="images/vue.jpg" title="vue"
-			onclick="showPic(this); return false;">vue</a></li>
-		<li><a href="images/python.jpg" title="python"
-			onclick="showPic(this); return false;">python</a></li>
+	<ul id="imagegallery">
+		<li>
+			<a href="images/docker.jpg" title="docker">
+				<img src="images/docker.jpg" alt="Docker" />
+			</a>
+		</li>
+		<li>
+			<a href="images/vue.jpg" title="vue">
+				<img src="images/vue.jpg" alt="VueJS" />
+			</a>
+		</li>
+		<li>
+			<a href="images/python.jpg" title="python">
+				<img src="images/python.jpg" alt="Python" />
+			</a>
+		</li>
 	</ul>
 	<img id="placeholder" src="images/mint.jpg" />
 	<p id="description">Choose an image.</p>
 	<script src="Day_5.js"></script>
-	
-	<!--<script>
-		var vars = document.getElementsByTagName("a");
-		for (var i=0; i < vars.length; i++) {
-			var title_text = vars[i].getAttribute("title");
-			if (title_text){
-				alert(vars[i].getAttribute("title"));
-			}
-		}
-	</script>-->
 </body>
 </html>
