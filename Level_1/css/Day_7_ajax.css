@@ -6,3 +6,10 @@ abbr{
     font-style: none;
     border: 0;
 }
+a{
+    text-decoration: none;
+    font-style: none;
+    border: 0;
+    color: black;
+    display: inline-block;
+}
