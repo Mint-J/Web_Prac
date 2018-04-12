@@ -1,14 +1,13 @@
-function styleHearderSiblings() {
+function styleHearderSiblings(tag, theclass) {
     if (!document.getElementsByTagName) return false;
-    var headers  = document.getElementsByTagName("h1");
+    var headers  = document.getElementsByTagName(tag);
     var elem;
     for (var i = 0; i < headers.length; i++) {
         elem = getNextElement(headers[i].nextSibling);
-        elem.style.fontWeight = "bold";
-        elem.style.fontSize = "1.2em";
-        elem.style.color = "green";
+        addClass(elem, theclass);
     }
 }
+
 function getNextElement(node) {
     if (node.nodeType == 1) {
         return node;
@@ -19,4 +18,6 @@ function getNextElement(node) {
     return null;
 }
 
-addLoadEvent(styleHearderSiblings);
+addLoadEvent(function() {
+    styleHearderSiblings("h1", "intro");
+});
