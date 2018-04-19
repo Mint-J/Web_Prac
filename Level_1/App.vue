@@ -53,7 +53,7 @@ export default {
           {
               text: 'pineapple',
               value: 1,
-          }]
+          }],
           selection: null,
           myBox: [],
           myValue: "",
@@ -100,7 +100,7 @@ export default {
   methods: {
       getmyValueWithoutNum() {
           return this.myValue.replace(/\d/g, '');
-      }
+      },
       addItem() {
           this.list.push({
               name: two_pineapple,
